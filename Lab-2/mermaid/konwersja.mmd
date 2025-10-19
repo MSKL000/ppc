@@ -1,0 +1,6 @@
+flowchart TD
+    A([Start]) --> B[Wczytaj kwotę w PLN]
+    B --> C[Wczytaj kurs USD/PLN]
+    C --> D[Oblicz amountUSD = amountPLN / rate]
+    D --> E[Wyświetl wynik w USD]
+    E --> F([Stop])

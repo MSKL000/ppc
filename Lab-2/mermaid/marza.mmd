@@ -1,0 +1,6 @@
+flowchart TD
+    A([Start]) --> B["Wczytaj cene zakupu netto\n(purchanseNet)"]
+    B --> C["Wczytaj marze w procentach\n(marginPercent)"]
+    C --> D["Oblicz sellingPrice = purchanseNet * (1 + marginPercent / 100)"]
+    D --> E["Wyswietl wynik: cena z marza"]
+    E --> F([Stop])
